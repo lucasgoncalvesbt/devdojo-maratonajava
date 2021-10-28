@@ -1,17 +1,23 @@
 package academy.devdojo.maratonajava.javacore.Minterfaces.test;
 
 import academy.devdojo.maratonajava.javacore.Minterfaces.dominio.DataBaseLoader;
+import academy.devdojo.maratonajava.javacore.Minterfaces.dominio.DataLoader;
 import academy.devdojo.maratonajava.javacore.Minterfaces.dominio.FileLoader;
 
 public class DataLoaderTest01 {
     public static void main(String[] args) {
-        DataBaseLoader dataBaseLoader = new DataBaseLoader();
+        DataBaseLoader databaseLoader = new DataBaseLoader();
         FileLoader fileLoader = new FileLoader();
-        dataBaseLoader.load();
+        databaseLoader.load();
         fileLoader.load();
-        dataBaseLoader.remove();
+
+        databaseLoader.remove();
         fileLoader.remove();
-        dataBaseLoader.checkPermission();
+
+        databaseLoader.checkPermission();
         fileLoader.checkPermission();
+
+        DataLoader.retrieveMaxDataSize();
+        DataBaseLoader.retrieveMaxDataSize();
     }
 }
