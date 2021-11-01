@@ -61,4 +61,20 @@ public class ReportDto {
                 ", personName='" + personName + '\'' +
                 '}';
     }
+
+    public String getAircraftName() {
+        return aircraftName;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public Currency getCurrency() {
+        return currency;
+    }
+
+    public String getPersonName() {
+        return personName;
+    }
 }

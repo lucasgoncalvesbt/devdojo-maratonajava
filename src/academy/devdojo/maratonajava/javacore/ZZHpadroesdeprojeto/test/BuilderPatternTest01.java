@@ -8,7 +8,7 @@ public class BuilderPatternTest01 {
                 .builder()
                 .firstName("Lucas")
                 .lastName("Gonçalves")
-                .userName("ryu")
+                .username("ryu")
                 .email("lucas@email.com")
                 .build();
 
